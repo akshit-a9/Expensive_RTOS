@@ -1,4 +1,4 @@
-# TinyRTOS – Real-Time Operating System for ARM Cortex-A9 (Zedboard)
+# Expensive_RTOS : A real time OS
 
 This repository contains the implementation of **Expensive_RTOS**, a minimal real-time operating system built for the **ARM Cortex-A9** processor on the **Zedboard** platform.  
 It is developed as part of the *Real-Time Embedded Systems* coursework at **BITS Pilani, K.K. Birla Goa Campus**.
@@ -7,10 +7,10 @@ It is developed as part of the *Real-Time Embedded Systems* coursework at **BITS
 
 ## Overview
 Expensive_RTOS is a lightweight, custom operating system that provides:
-- **Task creation and management APIs** (similar to FreeRTOS)
-- **Priority-based scheduling** with **round-robin arbitration** for equal priorities  
-- **Timer-driven preemption** using the FPGA-generated interrupt
-- **Standalone BSP support** (no FreeRTOS dependency)
+- Task creation and management APIs
+- Priority-based scheduling with round-robin arbitration
+- Timer-driven preemption
+- Standalone BSP support
 
 The OS is designed to run on top of **Xilinx’s standalone environment**, using some provided **bitstream (`.bit`)** and **XSA (`.xsa`)** files for timer integration.
 
