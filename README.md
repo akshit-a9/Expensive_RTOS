@@ -1,13 +1,72 @@
-# TinyRTOS for Zedboard (Cortex-A9)
+# TinyRTOS – Real-Time Operating System for ARM Cortex-A9 (Zedboard)
 
-A minimal real-time operating system being developed for the **Zedboard (ARM Cortex-A9)** platform. This is a course project for G515 - Real Time Embedded Systems at BPGC. 
+This repository contains the implementation of **Expensive_RTOS**, a minimal real-time operating system built for the **ARM Cortex-A9** processor on the **Zedboard** platform.  
+It is developed as part of the *Real-Time Embedded Systems* coursework at **BITS Pilani, K.K. Birla Goa Campus**.
 
-The OS will provide basic task creation and scheduling, using a priority-based preemptive scheduler with round-robin arbitration for equal-priority tasks. It will rely on the **FPGA timer interrupt** for its system tick.
+---
 
-## Current Status
-Initial setup phase — core design and team roles to be finalized.
+## Overview
+Expensive_RTOS is a lightweight, custom operating system that provides:
+- **Task creation and management APIs** (similar to FreeRTOS)
+- **Priority-based scheduling** with **round-robin arbitration** for equal priorities  
+- **Timer-driven preemption** using the FPGA-generated interrupt
+- **Standalone BSP support** (no FreeRTOS dependency)
 
-## Build Target
-- **Platform:** Zedboard (ARM Cortex-A9)
-- **Toolchain:** Vitis (Standalone BSP)
-- **Timer:** FPGA Timer (bitstream & API provided)
+The OS is designed to run on top of **Xilinx’s standalone environment**, using some provided **bitstream (`.bit`)** and **XSA (`.xsa`)** files for timer integration.
+
+---
+
+## Project Structure
+```
+TinyRTOS/
+│
+├── hardware/
+│   ├── design_1_wrapper.xsa          # Hardware handoff file for Vitis
+│   └── design_1_wrapper.bit          # Bitstream with timer peripheral
+│
+├── src/
+│   ├── main.c                        # Example test task
+│   ├── rtos.c                        # Core RTOS logic
+│   ├── task.c                        # Task creation & management
+│   ├── scheduler.c                   # Timer ISR & scheduling base
+│   └── context_switch.S              # (Future) Context switch routines
+│
+├── include/
+│   ├── rtos.h
+│   ├── task.h
+│   └── scheduler.h
+│
+└── vitis_workspace/                  # Generated automatically by Vitis
+```
+
+---
+
+## Build & Run (Vitis)
+1. **Open Vitis IDE** → *Create Application Project*  
+   - Hardware platform: `hardware/design_1_wrapper.xsa`  
+   - OS: **standalone** (not FreeRTOS)  
+2. Replace the auto-generated `src/` and `include/` folders with those from this repo.
+3. Add `include/` to project include paths.
+4. Build
+5. Program the FPGA with `design_1_wrapper.bit`
+6. Launch the ELF on hardware (Zedboard).
+
+---
+
+##  Development Phases
+| Phase | Description |
+|--------|-------------|
+| 1 | Base skeleton – single task, timer interrupt test |
+| 2 | Priority scheduling + round-robin logic |
+| 3 | Context switching (assembly) |
+| 4 | Task delay / yield and timing refinement |
+
+We are currently at Phase 1
+
+##  Team Members
+| Enrollment No. | Name |
+|--------|-------------|
+| 2025H1400065G | Ayushman Muduli |
+| 2025H1400069G | Akshit Sharma |
+| 2025H1400076G | Sukrutha T S |
+
