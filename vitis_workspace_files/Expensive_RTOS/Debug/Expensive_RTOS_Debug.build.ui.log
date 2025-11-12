@@ -1,4 +1,4 @@
-2025-11-10T12:25:59.998835900255-12:25:59 **** Incremental Build of configuration Debug for project Expensive_RTOS ****
+2025-11-12T15:49:31.611727700255-15:49:31 **** Incremental Build of configuration Debug for project Expensive_RTOS ****
 000-make all 
 000-make --no-print-directory pre-build
 000-a9-linaro-pre-build-step
@@ -17,9 +17,9 @@
 000-'Invoking: ARM v7 Print Size'
 000-arm-none-eabi-size Expensive_RTOS.elf  |tee "Expensive_RTOS.elf.size"
 000-   text	   data	    bss	    dec	    hex	filename
-000-  32286	   2960	  22840	  58086	   e2e6	Expensive_RTOS.elf
+000-  27916	   1928	  22856	  52700	   cddc	Expensive_RTOS.elf
 000-'Finished building: Expensive_RTOS.elf.size'
 000-' '
 00255-
-12:26:00 Build Finished (took 742ms)
+15:49:32 Build Finished (took 705ms)
 

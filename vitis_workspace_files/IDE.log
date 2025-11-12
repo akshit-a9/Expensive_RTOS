@@ -216,3 +216,335 @@ con
 
 12:26:26 INFO  : Launch script is exported to file 'D:\RTES\2025H1400069G\Expensive_RTOS\.sdk\launch_scripts\single_application_debug\debugger_expensive_rtos-default.tcl'
 12:26:37 INFO  : Disconnected from the channel tcfchan#3.
+15:37:15 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\RTES\2025H1400069G\Expensive_RTOS\temp_xsdb_launch_script.tcl
+15:37:18 INFO  : XSCT server has started successfully.
+15:37:18 INFO  : Successfully done setting XSCT server connection channel  
+15:37:18 INFO  : plnx-install-location is set to ''
+15:37:18 INFO  : Successfully done setting workspace for the tool. 
+15:37:22 INFO  : Platform repository initialization has completed.
+15:37:22 INFO  : Registering command handlers for Vitis TCF services
+15:37:26 INFO  : Successfully done query RDI_DATADIR 
+15:41:51 INFO  : Checking for BSP changes to sync application flags for project 'Expensive_RTOS'...
+15:42:02 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa is already opened
+
+15:43:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:43:02 INFO  : Jtag cable 'Digilent Zed 210248AC8896' is selected.
+15:43:02 INFO  : 'jtag frequency' command is executed.
+15:43:02 INFO  : Context for 'APU' is selected.
+15:43:02 INFO  : System reset is completed.
+15:43:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:43:05 INFO  : 'after 3000' command is executed.
+15:43:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8896" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8896-23727093-0"}' command is executed.
+15:43:05 ERROR : couldn't open "D:/RTES/2025H1400069G/Files/Expensive_RTOS-main/hardware/design_1_wrapper.bit": no such file or directory
+15:43:05 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: couldn't open "D:/RTES/2025H1400069G/Files/Expensive_RTOS-main/hardware/design_1_wrapper.bit": no such file or directory
+15:43:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+15:43:05 ERROR : couldn't open "D:/RTES/2025H1400069G/Files/Expensive_RTOS-main/hardware/design_1_wrapper.bit": no such file or directory
+15:43:05 INFO  : Jtag cable 'Digilent Zed 210248AC8896' is selected.
+15:43:05 INFO  : 'jtag frequency' command is executed.
+15:43:05 INFO  : Context for 'APU' is selected.
+15:43:05 INFO  : System reset is completed.
+15:43:08 INFO  : 'after 3000' command is executed.
+15:43:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8896" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8896-23727093-0"}' command is executed.
+15:43:08 ERROR : couldn't open "D:/RTES/2025H1400069G/Files/Expensive_RTOS-main/hardware/design_1_wrapper.bit": no such file or directory
+15:43:08 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: couldn't open "D:/RTES/2025H1400069G/Files/Expensive_RTOS-main/hardware/design_1_wrapper.bit": no such file or directory
+15:43:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+15:43:08 ERROR : couldn't open "D:/RTES/2025H1400069G/Files/Expensive_RTOS-main/hardware/design_1_wrapper.bit": no such file or directory
+15:43:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:43:43 INFO  : Jtag cable 'Digilent Zed 210248AC8896' is selected.
+15:43:43 INFO  : 'jtag frequency' command is executed.
+15:43:43 INFO  : Context for 'APU' is selected.
+15:43:43 INFO  : System reset is completed.
+15:43:46 INFO  : 'after 3000' command is executed.
+15:43:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8896" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8896-23727093-0"}' command is executed.
+15:43:48 INFO  : FPGA configured successfully with bitstream "D:/RTES/2025H1400069G/Files/Expensive_RTOS-phase2/hardware/design_1_wrapper.bit"
+15:43:48 INFO  : Context for 'APU' is selected.
+15:43:48 INFO  : Hardware design and registers information is loaded from 'D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:43:48 INFO  : 'configparams force-mem-access 1' command is executed.
+15:43:48 INFO  : Context for 'APU' is selected.
+15:43:48 INFO  : Sourcing of 'D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/_ide/psinit/ps7_init.tcl' is done.
+15:43:49 INFO  : 'ps7_init' command is executed.
+15:43:49 INFO  : 'ps7_post_config' command is executed.
+15:43:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:43:49 INFO  : The application 'D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/Debug/Expensive_RTOS.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:43:49 INFO  : 'configparams force-mem-access 0' command is executed.
+15:43:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8896" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8896-23727093-0"}
+fpga -file D:/RTES/2025H1400069G/Files/Expensive_RTOS-phase2/hardware/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/Debug/Expensive_RTOS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:43:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:43:49 INFO  : 'con' command is executed.
+15:43:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:43:49 INFO  : Launch script is exported to file 'D:\RTES\2025H1400069G\Expensive_RTOS\.sdk\launch_scripts\single_application_debug\debugger_expensive_rtos-default.tcl'
+15:45:49 INFO  : Disconnected from the channel tcfchan#2.
+15:45:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:45:50 INFO  : Jtag cable 'Digilent Zed 210248AC8896' is selected.
+15:45:50 INFO  : 'jtag frequency' command is executed.
+15:45:50 INFO  : Context for 'APU' is selected.
+15:45:51 INFO  : System reset is completed.
+15:45:54 INFO  : 'after 3000' command is executed.
+15:45:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8896" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8896-23727093-0"}' command is executed.
+15:45:56 INFO  : FPGA configured successfully with bitstream "D:/RTES/2025H1400069G/Files/Expensive_RTOS-phase2/hardware/design_1_wrapper.bit"
+15:45:56 INFO  : Context for 'APU' is selected.
+15:45:59 INFO  : Hardware design and registers information is loaded from 'D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:45:59 INFO  : 'configparams force-mem-access 1' command is executed.
+15:45:59 INFO  : Context for 'APU' is selected.
+15:45:59 INFO  : Sourcing of 'D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/_ide/psinit/ps7_init.tcl' is done.
+15:46:00 INFO  : 'ps7_init' command is executed.
+15:46:00 INFO  : 'ps7_post_config' command is executed.
+15:46:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:46:00 INFO  : The application 'D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/Debug/Expensive_RTOS.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:46:00 INFO  : 'configparams force-mem-access 0' command is executed.
+15:46:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8896" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8896-23727093-0"}
+fpga -file D:/RTES/2025H1400069G/Files/Expensive_RTOS-phase2/hardware/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/Debug/Expensive_RTOS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:46:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:46:00 INFO  : 'con' command is executed.
+15:46:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:46:00 INFO  : Launch script is exported to file 'D:\RTES\2025H1400069G\Expensive_RTOS\.sdk\launch_scripts\single_application_debug\debugger_expensive_rtos-default.tcl'
+15:47:07 INFO  : Checking for BSP changes to sync application flags for project 'Expensive_RTOS'...
+15:47:10 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa is already opened
+
+15:47:18 INFO  : Disconnected from the channel tcfchan#3.
+15:47:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:47:19 INFO  : Jtag cable 'Digilent Zed 210248AC8896' is selected.
+15:47:19 INFO  : 'jtag frequency' command is executed.
+15:47:19 INFO  : Context for 'APU' is selected.
+15:47:19 INFO  : System reset is completed.
+15:47:22 INFO  : 'after 3000' command is executed.
+15:47:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8896" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8896-23727093-0"}' command is executed.
+15:47:24 INFO  : FPGA configured successfully with bitstream "D:/RTES/2025H1400069G/Files/Expensive_RTOS-phase2/hardware/design_1_wrapper.bit"
+15:47:24 INFO  : Context for 'APU' is selected.
+15:47:28 INFO  : Hardware design and registers information is loaded from 'D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:47:28 INFO  : 'configparams force-mem-access 1' command is executed.
+15:47:28 INFO  : Context for 'APU' is selected.
+15:47:28 INFO  : Sourcing of 'D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/_ide/psinit/ps7_init.tcl' is done.
+15:47:28 INFO  : 'ps7_init' command is executed.
+15:47:28 INFO  : 'ps7_post_config' command is executed.
+15:47:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:47:28 INFO  : The application 'D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/Debug/Expensive_RTOS.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:47:28 INFO  : 'configparams force-mem-access 0' command is executed.
+15:47:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8896" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8896-23727093-0"}
+fpga -file D:/RTES/2025H1400069G/Files/Expensive_RTOS-phase2/hardware/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/Debug/Expensive_RTOS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:47:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:47:28 INFO  : 'con' command is executed.
+15:47:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:47:28 INFO  : Launch script is exported to file 'D:\RTES\2025H1400069G\Expensive_RTOS\.sdk\launch_scripts\single_application_debug\debugger_expensive_rtos-default.tcl'
+15:47:59 INFO  : Checking for BSP changes to sync application flags for project 'Expensive_RTOS'...
+15:48:01 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa is already opened
+
+15:48:08 INFO  : Disconnected from the channel tcfchan#5.
+15:48:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:48:10 INFO  : Jtag cable 'Digilent Zed 210248AC8896' is selected.
+15:48:10 INFO  : 'jtag frequency' command is executed.
+15:48:10 INFO  : Context for 'APU' is selected.
+15:48:10 INFO  : System reset is completed.
+15:48:13 INFO  : 'after 3000' command is executed.
+15:48:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8896" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8896-23727093-0"}' command is executed.
+15:48:15 INFO  : FPGA configured successfully with bitstream "D:/RTES/2025H1400069G/Files/Expensive_RTOS-phase2/hardware/design_1_wrapper.bit"
+15:48:15 INFO  : Context for 'APU' is selected.
+15:48:19 INFO  : Hardware design and registers information is loaded from 'D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:48:19 INFO  : 'configparams force-mem-access 1' command is executed.
+15:48:19 INFO  : Context for 'APU' is selected.
+15:48:19 INFO  : Sourcing of 'D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/_ide/psinit/ps7_init.tcl' is done.
+15:48:19 INFO  : 'ps7_init' command is executed.
+15:48:19 INFO  : 'ps7_post_config' command is executed.
+15:48:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:48:19 INFO  : The application 'D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/Debug/Expensive_RTOS.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:48:19 INFO  : 'configparams force-mem-access 0' command is executed.
+15:48:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8896" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8896-23727093-0"}
+fpga -file D:/RTES/2025H1400069G/Files/Expensive_RTOS-phase2/hardware/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/Debug/Expensive_RTOS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:48:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:48:20 INFO  : 'con' command is executed.
+15:48:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:48:20 INFO  : Launch script is exported to file 'D:\RTES\2025H1400069G\Expensive_RTOS\.sdk\launch_scripts\single_application_debug\debugger_expensive_rtos-default.tcl'
+15:49:31 INFO  : Checking for BSP changes to sync application flags for project 'Expensive_RTOS'...
+15:49:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa is already opened
+
+15:50:07 INFO  : Disconnected from the channel tcfchan#7.
+15:50:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:50:09 INFO  : Jtag cable 'Digilent Zed 210248AC8896' is selected.
+15:50:09 INFO  : 'jtag frequency' command is executed.
+15:50:09 INFO  : Context for 'APU' is selected.
+15:50:09 INFO  : System reset is completed.
+15:50:12 INFO  : 'after 3000' command is executed.
+15:50:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8896" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8896-23727093-0"}' command is executed.
+15:50:14 INFO  : FPGA configured successfully with bitstream "D:/RTES/2025H1400069G/Files/Expensive_RTOS-phase2/hardware/design_1_wrapper.bit"
+15:50:14 INFO  : Context for 'APU' is selected.
+15:50:18 INFO  : Hardware design and registers information is loaded from 'D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:50:18 INFO  : 'configparams force-mem-access 1' command is executed.
+15:50:18 INFO  : Context for 'APU' is selected.
+15:50:18 INFO  : Sourcing of 'D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/_ide/psinit/ps7_init.tcl' is done.
+15:50:18 INFO  : 'ps7_init' command is executed.
+15:50:18 INFO  : 'ps7_post_config' command is executed.
+15:50:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:50:18 INFO  : The application 'D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/Debug/Expensive_RTOS.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:50:18 INFO  : 'configparams force-mem-access 0' command is executed.
+15:50:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8896" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8896-23727093-0"}
+fpga -file D:/RTES/2025H1400069G/Files/Expensive_RTOS-phase2/hardware/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/Debug/Expensive_RTOS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:50:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:50:18 INFO  : 'con' command is executed.
+15:50:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:50:18 INFO  : Launch script is exported to file 'D:\RTES\2025H1400069G\Expensive_RTOS\.sdk\launch_scripts\single_application_debug\debugger_expensive_rtos-default.tcl'
+15:52:01 INFO  : Disconnected from the channel tcfchan#9.
+15:52:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:52:02 INFO  : Jtag cable 'Digilent Zed 210248AC8896' is selected.
+15:52:02 INFO  : 'jtag frequency' command is executed.
+15:52:02 INFO  : Context for 'APU' is selected.
+15:52:02 INFO  : System reset is completed.
+15:52:05 INFO  : 'after 3000' command is executed.
+15:52:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8896" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8896-23727093-0"}' command is executed.
+15:52:08 INFO  : FPGA configured successfully with bitstream "D:/RTES/2025H1400069G/Files/Expensive_RTOS-phase2/hardware/design_1_wrapper.bit"
+15:52:08 INFO  : Context for 'APU' is selected.
+15:52:11 INFO  : Hardware design and registers information is loaded from 'D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:52:11 INFO  : 'configparams force-mem-access 1' command is executed.
+15:52:11 INFO  : Context for 'APU' is selected.
+15:52:11 INFO  : Sourcing of 'D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/_ide/psinit/ps7_init.tcl' is done.
+15:52:12 INFO  : 'ps7_init' command is executed.
+15:52:12 INFO  : 'ps7_post_config' command is executed.
+15:52:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:52:12 INFO  : The application 'D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/Debug/Expensive_RTOS.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:52:12 INFO  : 'configparams force-mem-access 0' command is executed.
+15:52:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8896" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8896-23727093-0"}
+fpga -file D:/RTES/2025H1400069G/Files/Expensive_RTOS-phase2/hardware/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/Debug/Expensive_RTOS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:52:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:52:12 INFO  : 'con' command is executed.
+15:52:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:52:12 INFO  : Launch script is exported to file 'D:\RTES\2025H1400069G\Expensive_RTOS\.sdk\launch_scripts\single_application_debug\debugger_expensive_rtos-default.tcl'
+15:53:23 INFO  : Disconnected from the channel tcfchan#10.

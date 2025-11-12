@@ -16,3 +16,39 @@ TRACE::2025-11-10.12:26:02::SCWBifWriter::proc[0] : ps7_cortexa9_0
 TRACE::2025-11-10.12:26:02::SCWBifWriter::Device type is : zynq
 TRACE::2025-11-10.12:26:02::SCWBifWriter::Writing BIF to file : D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS_system/Debug/system.bif
 TRACE::2025-11-10.12:26:02::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2025-11-12.15:42:02::SCWBifWriter::Found the complete platform D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+TRACE::2025-11-12.15:42:02::SCWBifWriter::hardware databse : design_1_wrapper
+TRACE::2025-11-12.15:42:02::SCWBifWriter::No bitstream found in the design
+TRACE::2025-11-12.15:42:02::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2025-11-12.15:42:02::SCWBifWriter::proc type : 
+TRACE::2025-11-12.15:42:02::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2025-11-12.15:42:02::SCWBifWriter::Device type is : zynq
+TRACE::2025-11-12.15:42:02::SCWBifWriter::Writing BIF to file : D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS_system/Debug/system.bif
+TRACE::2025-11-12.15:42:02::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2025-11-12.15:47:10::SCWBifWriter::Found the complete platform D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+TRACE::2025-11-12.15:47:10::SCWBifWriter::hardware databse : design_1_wrapper_0
+TRACE::2025-11-12.15:47:10::SCWBifWriter::No bitstream found in the design
+TRACE::2025-11-12.15:47:10::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2025-11-12.15:47:10::SCWBifWriter::proc type : 
+TRACE::2025-11-12.15:47:10::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2025-11-12.15:47:10::SCWBifWriter::Device type is : zynq
+TRACE::2025-11-12.15:47:10::SCWBifWriter::Writing BIF to file : D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS_system/Debug/system.bif
+TRACE::2025-11-12.15:47:10::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2025-11-12.15:48:00::SCWBifWriter::Found the complete platform D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+TRACE::2025-11-12.15:48:01::SCWBifWriter::hardware databse : design_1_wrapper_1
+TRACE::2025-11-12.15:48:01::SCWBifWriter::No bitstream found in the design
+TRACE::2025-11-12.15:48:01::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2025-11-12.15:48:01::SCWBifWriter::proc type : 
+TRACE::2025-11-12.15:48:01::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2025-11-12.15:48:01::SCWBifWriter::Device type is : zynq
+TRACE::2025-11-12.15:48:01::SCWBifWriter::Writing BIF to file : D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS_system/Debug/system.bif
+TRACE::2025-11-12.15:48:01::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2025-11-12.15:49:33::SCWBifWriter::Found the complete platform D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+TRACE::2025-11-12.15:49:33::SCWBifWriter::hardware databse : design_1_wrapper_2
+TRACE::2025-11-12.15:49:33::SCWBifWriter::No bitstream found in the design
+TRACE::2025-11-12.15:49:33::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2025-11-12.15:49:33::SCWBifWriter::proc type : 
+TRACE::2025-11-12.15:49:33::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2025-11-12.15:49:33::SCWBifWriter::Device type is : zynq
+TRACE::2025-11-12.15:49:33::SCWBifWriter::Writing BIF to file : D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS_system/Debug/system.bif
+TRACE::2025-11-12.15:49:33::SCWBifWriter::Writing the Zynq Baremetal bif 

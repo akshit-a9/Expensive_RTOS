@@ -1,9 +1,9 @@
-2025-11-10T12:26:01.007388500255-12:26:01 **** Incremental Build of configuration Debug for project Expensive_RTOS_system ****
+2025-11-12T15:49:32.546688900255-15:49:32 **** Incremental Build of configuration Debug for project Expensive_RTOS_system ****
 000-make all 
 000-Generating bif file for the system project
-000-generate_system_bif.bat 50180 D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm domain_ps7_cortexa9_0 D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS_system/Debug/system.bif
+000-generate_system_bif.bat 50449 D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm domain_ps7_cortexa9_0 D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS_system/Debug/system.bif
 000-sdcard_gen --xpfm D:/RTES/2025H1400069G/Expensive_RTOS/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS_system/Debug/system.bif --no_bitstream --elf D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS/Debug/Expensive_RTOS.elf,ps7_cortexa9_0
 000-Running C:/Xilinx/Vitis/2020.1/bin/bootgen  -image D:/RTES/2025H1400069G/Expensive_RTOS/Expensive_RTOS_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 00255-
-12:26:05 Build Finished (took 4s.392ms)
+15:49:36 Build Finished (took 4s.409ms)
 
