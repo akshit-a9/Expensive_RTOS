@@ -1,23 +1,11 @@
-// #include "rtos.h"
-// #include "xil_printf.h"
+#include "rtos.h"
+#include "xil_printf.h"
 
 // void TaskA(void *param) {
 //     xil_printf("Task A running with param %d\n\r", *((int *)param));
 // }
 
-// int main() {
-//     xil_printf("RTOS test start\n\r");
 
-//     RTOS_Init();
-//     static int p = 5;
-//     RTOS_CreateTask(TaskA, &p, 1);
-//     RTOS_Start();  // Will later trigger scheduler
-
-//     while (1);
-// }
-
-#include "rtos.h"
-#include "xil_printf.h"
 
 /* Demo tasks:
    - Two medium-priority tasks (1) to show round-robin
@@ -43,11 +31,13 @@ void TaskMedB(void *p)
 
 int main(void)
 {
+    // xil_printf("RTOS test start\n\r");
     xil_printf("=== TinyRTOS Phase 2 Demo ===\n\r");
 
     RTOS_Init();
-
+    // static int p = 5;
     static int pa = 10, pb = 20, pc = 30;
+    // RTOS_CreateTask(TaskA, &p, 1);
     RTOS_CreateTask(TaskHigh, &pa, 0);  // highest prio
     RTOS_CreateTask(TaskMedA, &pb, 1);  // medium
     RTOS_CreateTask(TaskMedB, &pc, 1);  // medium (same prio → round-robin)

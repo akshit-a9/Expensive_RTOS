@@ -1,35 +1,10 @@
-// // rtos.c
-// #include "rtos.h"
-// #include "xil_printf.h"
-
-// static scheduler sysScheduler;
-
-// void RTOS_Init(void) {
-//     xil_printf("Initializing RTOS...\n\r");
-//     initScheduler(&sysScheduler, NULL, NULL);
-// }
-
-// void RTOS_CreateTask(void (*taskFunc)(void *), void *param, int priority) {
-//     createTask(taskFunc, param, priority);
-// }
-
-// void RTOS_Start(void) {
-//     xil_printf("Starting scheduler...\n\r");
-//     // For now, run the first task manually
-//     TCB *t = getNextTask();
-//     if (t) {
-//         t->taskFunc(t->param);
-//     }
-//     loadTimer(1000000); // Just to test timer interrupt
-// }
-
+// rtos.c
 #include "rtos.h"
 #include "xil_printf.h"
 #include <string.h>
 
-/* -------- Priority + Round-Robin state -------- */
 
-static int rrCursor[MAX_PRIORITY];   // per-priority rotating cursor
+static int rrCursor[MAX_PRIORITY];
 
 /* Return next runnable task index:
    - pick highest non-empty priority
@@ -61,36 +36,46 @@ static int pick_next_task_index(void)
             }
         }
     }
-    return -1; // nothing runnable
+    return -1; // if nothing runnable
 }
 
 /* -------- Scheduler / Timer wiring -------- */
 
 static scheduler g_sched;
 
-void RTOS_Init(void)
-{
+// static scheduler sysScheduler;
+
+void RTOS_Init(void) {
+//     xil_printf("Initializing RTOS...\n\r");
+
     memset(rrCursor, 0, sizeof(rrCursor));
 
     // Register our tick handler as the scheduler callback
     // NOTE: initScheduler expects a (void *(*)(void *)) signature in your header
+
+//  initScheduler(&sysScheduler, NULL, NULL);
     initScheduler(&g_sched, RTOS_Tick, NULL);
 
     xil_printf("TinyRTOS: Init done\n\r");
 }
 
-void RTOS_CreateTask(void (*taskFunc)(void *), void *param, int priority)
-{
-    int id = createTask(taskFunc, param, priority);
-    if (id >= 0) {
+void RTOS_CreateTask(void (*taskFunc)(void *), void *param, int priority) {
+//     createTask(taskFunc, param, priority);
+        int id = createTask(taskFunc, param, priority);
+        if (id >= 0) {
         xil_printf("TinyRTOS: Task %d created (pr=%d)\n\r", id, priority);
     }
 }
 
-void RTOS_Start(void)
-{
-    xil_printf("TinyRTOS: Start (timeslice=%d us)\n\r", (int)TIMESLICE_US);
-
+void RTOS_Start(void) {
+//     xil_printf("Starting scheduler...\n\r");
+//     // For now, run the first task manually
+//     TCB *t = getNextTask();
+//     if (t) {
+//         t->taskFunc(t->param);
+//     }
+       xil_printf("TinyRTOS: Start (timeslice=%d us)\n\r", (int)TIMESLICE_US);
+//     loadTimer(1000000); // Just to test timer interrupt
     // Immediately arm the timer for preemption
     loadTimer(TIMESLICE_US);
 }
