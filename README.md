@@ -61,7 +61,7 @@ TinyRTOS/
 | 3 | Context switching (assembly) |
 | 4 | Task delay / yield and timing refinement |
 
-We have succesfully completed Phase 1. Currently, added some files for Phase 2. 
+Current Status: Phase 2 completed. Added files for phase 3 to test on the FPGA. 
 
 ##  Team Members
 | Enrollment No. | Name |
